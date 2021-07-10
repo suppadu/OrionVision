@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		283CC1742699B29C005B75B8 /* Tochka.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CC1732699B29C005B75B8 /* Tochka.swift */; };
+		285C4E4E269954B300E8AEA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285C4E4C269954B300E8AEA1 /* SceneDelegate.swift */; };
+		285C4E4F269954B300E8AEA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285C4E4D269954B300E8AEA1 /* AppDelegate.swift */; };
+		285C4E522699550100E8AEA1 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285C4E502699550100E8AEA1 /* Builder.swift */; };
+		285C4E532699550100E8AEA1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285C4E512699550100E8AEA1 /* Router.swift */; };
+		285C4E552699551600E8AEA1 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285C4E542699551600E8AEA1 /* Camera.swift */; };
+		285C4E5B2699551F00E8AEA1 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285C4E562699551F00E8AEA1 /* MainPresenter.swift */; };
+		285C4E5D2699551F00E8AEA1 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285C4E582699551F00E8AEA1 /* VideoTableViewCell.swift */; };
+		285C4E5E2699551F00E8AEA1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285C4E592699551F00E8AEA1 /* MainView.swift */; };
+		285C4E5F2699551F00E8AEA1 /* VideosTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285C4E5A2699551F00E8AEA1 /* VideosTableView.swift */; };
+		285C4E632699552D00E8AEA1 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285C4E602699552D00E8AEA1 /* DetailView.swift */; };
+		285C4E642699552D00E8AEA1 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285C4E612699552D00E8AEA1 /* DetailPresenter.swift */; };
+		285C4E652699552D00E8AEA1 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285C4E622699552D00E8AEA1 /* NetworkService.swift */; };
+		28CA295126994F0A000F5D79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28CA295026994F0A000F5D79 /* Assets.xcassets */; };
+		28CA295426994F0A000F5D79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CA295226994F0A000F5D79 /* LaunchScreen.storyboard */; };
+		291336CC316A580D946E8629 /* Pods_OrionVision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BF5DB0274300377A7A03BD /* Pods_OrionVision.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04BF5DB0274300377A7A03BD /* Pods_OrionVision.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrionVision.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B32D214DE563717ED7D6E4C /* Pods-OrionVision.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrionVision.release.xcconfig"; path = "Target Support Files/Pods-OrionVision/Pods-OrionVision.release.xcconfig"; sourceTree = "<group>"; };
+		283CC1732699B29C005B75B8 /* Tochka.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tochka.swift; sourceTree = "<group>"; };
+		285C4E4C269954B300E8AEA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		285C4E4D269954B300E8AEA1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		285C4E502699550100E8AEA1 /* Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		285C4E512699550100E8AEA1 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		285C4E542699551600E8AEA1 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		285C4E562699551F00E8AEA1 /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		285C4E582699551F00E8AEA1 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		285C4E592699551F00E8AEA1 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		285C4E5A2699551F00E8AEA1 /* VideosTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosTableView.swift; sourceTree = "<group>"; };
+		285C4E602699552D00E8AEA1 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		285C4E612699552D00E8AEA1 /* DetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		285C4E622699552D00E8AEA1 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		28CA294426994F06000F5D79 /* OrionVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrionVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28CA295026994F0A000F5D79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28CA295326994F0A000F5D79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28CA295526994F0A000F5D79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E82FDCE8C740596F94AFD323 /* Pods-OrionVision.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrionVision.debug.xcconfig"; path = "Target Support Files/Pods-OrionVision/Pods-OrionVision.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28CA294126994F06000F5D79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				291336CC316A580D946E8629 /* Pods_OrionVision.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		285C4E66269955FD00E8AEA1 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				285C4E4D269954B300E8AEA1 /* AppDelegate.swift */,
+				285C4E4C269954B300E8AEA1 /* SceneDelegate.swift */,
+				285C4E502699550100E8AEA1 /* Builder.swift */,
+				285C4E512699550100E8AEA1 /* Router.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		285C4E672699562800E8AEA1 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				285C4E682699563500E8AEA1 /* Model */,
+				285C4E6A2699565A00E8AEA1 /* Presenter */,
+				285C4E692699564300E8AEA1 /* View */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		285C4E682699563500E8AEA1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				285C4E542699551600E8AEA1 /* Camera.swift */,
+				283CC1732699B29C005B75B8 /* Tochka.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		285C4E692699564300E8AEA1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				285C4E5A2699551F00E8AEA1 /* VideosTableView.swift */,
+				285C4E582699551F00E8AEA1 /* VideoTableViewCell.swift */,
+				285C4E592699551F00E8AEA1 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		285C4E6A2699565A00E8AEA1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				285C4E562699551F00E8AEA1 /* MainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		285C4E6B2699566C00E8AEA1 /* DetailModule */ = {
+			isa = PBXGroup;
+			children = (
+				285C4E6C2699567C00E8AEA1 /* Presenter */,
+				285C4E6D2699568600E8AEA1 /* View */,
+			);
+			path = DetailModule;
+			sourceTree = "<group>";
+		};
+		285C4E6C2699567C00E8AEA1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				285C4E612699552D00E8AEA1 /* DetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		285C4E6D2699568600E8AEA1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				285C4E602699552D00E8AEA1 /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		28CA293B26994F06000F5D79 = {
+			isa = PBXGroup;
+			children = (
+				28CA294626994F06000F5D79 /* OrionVision */,
+				28CA294526994F06000F5D79 /* Products */,
+				4B6CCA943F6295D6AB388756 /* Pods */,
+				4F4E26C05A4AEC9980FEB1BB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		28CA294526994F06000F5D79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28CA294426994F06000F5D79 /* OrionVision.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28CA294626994F06000F5D79 /* OrionVision */ = {
+			isa = PBXGroup;
+			children = (
+				285C4E66269955FD00E8AEA1 /* SupportFiles */,
+				285C4E672699562800E8AEA1 /* MainModule */,
+				285C4E6B2699566C00E8AEA1 /* DetailModule */,
+				285C4E622699552D00E8AEA1 /* NetworkService.swift */,
+				28CA295026994F0A000F5D79 /* Assets.xcassets */,
+				28CA295226994F0A000F5D79 /* LaunchScreen.storyboard */,
+				28CA295526994F0A000F5D79 /* Info.plist */,
+			);
+			path = OrionVision;
+			sourceTree = "<group>";
+		};
+		4B6CCA943F6295D6AB388756 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E82FDCE8C740596F94AFD323 /* Pods-OrionVision.debug.xcconfig */,
+				1B32D214DE563717ED7D6E4C /* Pods-OrionVision.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4F4E26C05A4AEC9980FEB1BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04BF5DB0274300377A7A03BD /* Pods_OrionVision.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28CA294326994F06000F5D79 /* OrionVision */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28CA295826994F0A000F5D79 /* Build configuration list for PBXNativeTarget "OrionVision" */;
+			buildPhases = (
+				AA1D5D6EEAE4999F35CC5D79 /* [CP] Check Pods Manifest.lock */,
+				28CA294026994F06000F5D79 /* Sources */,
+				28CA294126994F06000F5D79 /* Frameworks */,
+				28CA294226994F06000F5D79 /* Resources */,
+				4C2FBD983211BCFF022508CC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OrionVision;
+			productName = OrionVision;
+			productReference = 28CA294426994F06000F5D79 /* OrionVision.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28CA293C26994F06000F5D79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					28CA294326994F06000F5D79 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 28CA293F26994F06000F5D79 /* Build configuration list for PBXProject "OrionVision" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28CA293B26994F06000F5D79;
+			productRefGroup = 28CA294526994F06000F5D79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28CA294326994F06000F5D79 /* OrionVision */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28CA294226994F06000F5D79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28CA295426994F0A000F5D79 /* LaunchScreen.storyboard in Resources */,
+				28CA295126994F0A000F5D79 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C2FBD983211BCFF022508CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OrionVision/Pods-OrionVision-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OrionVision/Pods-OrionVision-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OrionVision/Pods-OrionVision-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA1D5D6EEAE4999F35CC5D79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrionVision-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28CA294026994F06000F5D79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				283CC1742699B29C005B75B8 /* Tochka.swift in Sources */,
+				285C4E532699550100E8AEA1 /* Router.swift in Sources */,
+				285C4E5E2699551F00E8AEA1 /* MainView.swift in Sources */,
+				285C4E5B2699551F00E8AEA1 /* MainPresenter.swift in Sources */,
+				285C4E4F269954B300E8AEA1 /* AppDelegate.swift in Sources */,
+				285C4E5D2699551F00E8AEA1 /* VideoTableViewCell.swift in Sources */,
+				285C4E632699552D00E8AEA1 /* DetailView.swift in Sources */,
+				285C4E5F2699551F00E8AEA1 /* VideosTableView.swift in Sources */,
+				285C4E552699551600E8AEA1 /* Camera.swift in Sources */,
+				285C4E4E269954B300E8AEA1 /* SceneDelegate.swift in Sources */,
+				285C4E522699550100E8AEA1 /* Builder.swift in Sources */,
+				285C4E652699552D00E8AEA1 /* NetworkService.swift in Sources */,
+				285C4E642699552D00E8AEA1 /* DetailPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		28CA295226994F0A000F5D79 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28CA295326994F0A000F5D79 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28CA295626994F0A000F5D79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28CA295726994F0A000F5D79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28CA295926994F0A000F5D79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E82FDCE8C740596F94AFD323 /* Pods-OrionVision.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P3N2G95HRL;
+				INFOPLIST_FILE = OrionVision/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.suppadu.OrionVision;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		28CA295A26994F0A000F5D79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B32D214DE563717ED7D6E4C /* Pods-OrionVision.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P3N2G95HRL;
+				INFOPLIST_FILE = OrionVision/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.suppadu.OrionVision;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28CA293F26994F06000F5D79 /* Build configuration list for PBXProject "OrionVision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28CA295626994F0A000F5D79 /* Debug */,
+				28CA295726994F0A000F5D79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28CA295826994F0A000F5D79 /* Build configuration list for PBXNativeTarget "OrionVision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28CA295926994F0A000F5D79 /* Debug */,
+				28CA295A26994F0A000F5D79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28CA293C26994F06000F5D79 /* Project object */;
+}
