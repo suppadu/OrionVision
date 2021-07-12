@@ -68,7 +68,12 @@ extension VideosTableView: UITableViewDataSource {
 
 extension VideosTableView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let id = self.presenter.camerasAll[indexPath.row].id
+        let id: Int
+        if search.isActive && search.searchBar.text != "" {
+            id = self.presenter.filteredCameras[indexPath.row].id
+        } else {
+            id = self.presenter.camerasAll[indexPath.row].id
+        }
         self.search.isActive = false
         self.presenter.tapCamera(id: id)
     }
