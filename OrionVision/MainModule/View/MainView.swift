@@ -12,13 +12,13 @@ class MainView: UIViewController {
     
     var table: VideosTableView!
     var presenter: MainPresenterProtocol!
-    
-    
+    var searchBar = UISearchController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .systemBackground
         self.view.addSubview(table)
+        self.table.tableHeaderView = self.searchBar.searchBar
         table.snp.makeConstraints { make in
             make.top.bottom.right.left.equalToSuperview()
         }
