@@ -12,6 +12,7 @@ class VideosTableView: UITableView {
     
     let cellId = "VideoTableViewCell"
     var presenter: MainPresenter!
+    var search: UISearchController!
     
     init() {
         super.init(frame: .zero, style: .plain)
@@ -30,13 +31,23 @@ class VideosTableView: UITableView {
 
 extension VideosTableView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.presenter.camerasForView.count
+        
+        if search.isActive && search.searchBar.text != "" {
+            return self.presenter.filteredCameras.count
+        } else {
+            return self.presenter.camerasAll.count
+        }
         
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: self.cellId, for: indexPath) as! VideoTableViewCell
-        let camera = self.presenter.camerasForView[indexPath.row]
+        let camera: CameraRawJSON
+        if search.isActive && search.searchBar.text != "" {
+            camera = self.presenter.filteredCameras[indexPath.row]
+        } else {
+            camera = self.presenter.camerasAll[indexPath.row]
+        }
         cell.title.text = camera.title
         self.presenter.getImage(id: camera.id, number: NSNumber(value: camera.id)) { image in
             cell.img.image = image
@@ -57,9 +68,8 @@ extension VideosTableView: UITableViewDataSource {
 
 extension VideosTableView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let id = self.presenter.camerasForView[indexPath.row].id
+        let id = self.presenter.camerasAll[indexPath.row].id
+        self.search.isActive = false
         self.presenter.tapCamera(id: id)
     }
-    
-    
 }

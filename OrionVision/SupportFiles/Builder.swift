@@ -19,13 +19,16 @@ class Builder: BuilderProtocol {
         let networkService = NetworkService()
         let view = MainView()
         let tableView = VideosTableView()
+        let search = UISearchController(searchResultsController: nil)
         let presenter = MainPresenter(view: view,
                                       network: networkService,
                                       tableView: tableView,
                                       router: router)
         view.presenter = presenter
         view.table = tableView
+        view.search = search
         tableView.presenter = presenter
+        tableView.search = search
         return view
     }
     

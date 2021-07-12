@@ -22,6 +22,7 @@ class Router: RouterProtocol {
     var navController: UINavigationController?
     
     var builder: BuilderProtocol?
+    var search = UISearchController(searchResultsController: nil)
     
     init(navController: UINavigationController, builder: BuilderProtocol) {
         self.navController = navController

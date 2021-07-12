@@ -31,7 +31,7 @@ class MainPresenter: MainPresenterProtocol {
     let tableView: VideosTableView
     let router: RouterProtocol
     var camerasAll: [CameraRawJSON] = []
-    var camerasForView: [CameraRawJSON] = []
+    var filteredCameras: [CameraRawJSON] = []
     var cacheImage = NSCache<NSNumber, UIImage>()
     
     required init(view: MainView,
@@ -49,9 +49,6 @@ class MainPresenter: MainPresenterProtocol {
         getCamerasInfoQueue.async {
             self.network.getCamerasAPI(){camerasJSON in
                 self.camerasAll.append(contentsOf: camerasJSON)
-                for camera in camerasJSON {
-                    self.camerasForView.append(camera)
-                }
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
